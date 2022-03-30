@@ -1,0 +1,508 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta http-equiv="Page-Enter" content="blendTrans(Duration=2.0)" />
+		<title>休音</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_2355834_swsechdr4a.css" />
+		<script src="//at.alicdn.com/t/font_2355834_swsechdr4a.js"></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta name="format-detection" content="telephone=no">
+<!-- 		<link rel="stylesheet" href="css/pushbar.css" media="all">
+		<script src="js/pushbar.js"></script>-->
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<link rel="stylesheet" href="css/animate.css" /> 
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+		<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script> 
+		 
+	</head>
+
+	<body>
+		<!-- <div id="topAnchor"></div> -->
+			<div class="header " >
+			<div class="pc_nav">
+				<a href="#top"><div class="logo"> <img src="img/logo.png" /> </div></a>
+				<ul class="nav_box">
+					<a href="#">
+						<li>个人信息</li>
+					</a> <a href="#app">
+						<li>APP设计</li>
+					</a> <a href="#web">
+						<li>网页 / 可视化设计</li>
+					</a>
+					<a href="#ae">
+						<li>动效设计</li>
+					</a>
+	<!-- 				 <a href="#csj">
+						<li>电商设计</li>
+					</a> -->
+
+				</ul>
+			</div>
+			</div>
+			
+			<script>
+				window.addEventListener('scroll', function() {
+					let t = $('body, html').scrollTop(); 
+					if (t > 90) {
+						$('.header').addClass('pc_nav_shadow')
+					} else {
+						$('.header').removeClass('pc_nav_shadow')
+					}
+				})
+			</script>
+			
+			
+<!-- 
+
+			
+		<div class="mob_nav">
+			<a href="index.html"><div class="logo"> <img src="img/logo.png" /> </div></a>
+			<i class="iconfont icon-calendar" data-pushbar-target="right"></i>
+		</div>
+			
+			<aside data-pushbar-id="right" class="pushbar from_right">
+				<div class="top_box_m">
+					<a href="index.html"><div class="logo"> <img src="img/logo.png" /> </div></a>
+					<i class="iconfont icon-calendar  close push_right" data-pushbar-close></i>
+				</div>
+				<ul class="menu">
+					<a href="index.html">
+						<li>首页</li>
+					</a>
+					<a href="#app" >
+						<li>APP / 网页设计</li>
+					</a>
+					<a href="graphic_design.html">
+						<li>平面设计</li>
+					</a>
+					<a href="e-commerce.html">
+						<li>电商设计</li>
+					</a>
+					<a href="ae_list.html">
+						<li>AE动效</li>
+					</a>
+					<a href="other.html">
+						<li>其它</li>
+					</a>
+				
+				</ul>
+			</aside>
+			<script type="text/javascript">
+				var pushbar = new Pushbar({
+					blur: true,
+					overlay: true,
+				});
+			</script>
+			 -->
+			
+<div class="content">	
+			
+			
+			<div class="information wow fadeInUp "  id="up">
+				<div class="head shadow-n">
+					<img src="img/head1.jpg" />
+				</div>
+				<h1>Showing Wang</h1>
+				<!--    <p>Samba。</p>-->
+
+				<p><i class="iconfont icon-bussiness-man icon-26"></i>姓名：汪少勇</p>
+				<p><i class="iconfont icon-calendar icon-26"></i>生日：1993.08</p>
+				<p><i class="iconfont icon-mobile-phone icon-26"></i>电话：<a style="color: #3b5999;" href="tel:18868411918">18868411918</a></p>
+				<p><i class="iconfont icon-weixin1 icon-26"></i>微信：				
+				<button class="btn" data-clipboard-action="copy" data-clipboard-target="#target" id="copy_btn">  
+				  <span id="target">showingwang</span>    
+				</button> </p>
+	
+				
+				
+				<p><i class="iconfont icon-email icon-26"></i>邮箱：<a style="color: #3b5999;" href="mailto:showingwang@outlook.com">showingwang@outlook.com</a></p>
+
+<!-- 				<a href="img/wsy.docx" download="汪少勇简历" class="download">						
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#icon-word"></use>
+						</svg>下载简历
+				</a> -->
+
+				
+ 
+				<script>    
+					$(document).ready(function(){      
+						var clipboard = new Clipboard('#copy_btn');    
+						clipboard.on('success', function(e) {    
+							alert("微信号复制成功",1500);
+							window.location.href='weixin://';
+							e.clearSelection();    
+							console.log(e.clearSelection);    
+						});    
+					});    
+				</script>  
+
+
+			</div>
+
+			
+			
+			<div class="skill-box wow fadeInUp">
+				<div class="skill">
+					<div class="skill-icon">
+						<svg class="icon icon-size" aria-hidden="true">
+							<use xlink:href="#icon-AdobePs"></use>
+						</svg>
+					</div>
+					<p>Photoshop</p>
+				</div>
+				<div class="skill">
+					<div class="skill-icon">
+						<svg class="icon icon-size" aria-hidden="true">
+							<use xlink:href="#icon-AdobeAi"></use>
+						</svg>
+					</div>
+					<p>Illustrator</p>
+				</div>
+				<div class="skill">
+					<div class="skill-icon">
+						<svg class="icon icon-size" aria-hidden="true">
+							<use xlink:href="#icon-AdobeXd"></use>
+						</svg>
+					</div>
+					<p>Adobe XD</p>
+				</div>
+				<div class="skill">
+					<div class="skill-icon">
+						<svg class="icon icon-size" aria-hidden="true">
+							<use xlink:href="#icon-sketch"></use>
+						</svg>
+					</div>
+					<p>Sketch</p>
+				</div>
+
+				<div class="skill">
+					<div class="skill-icon">
+						<svg class="icon icon-size" aria-hidden="true">
+							<use xlink:href="#icon-AdobeAe"></use>
+						</svg>
+					</div>
+					<p>After Effects</p>
+				</div>
+
+				<div class="skill">
+					<div class="skill-icon">
+						<svg class="icon icon-size" aria-hidden="true">
+							<use xlink:href="#icon-HTML5"></use>
+						</svg>
+					</div>
+					<p>Html+Css</p>
+				</div>
+
+
+<!-- 
+				<div class="skill">
+					<div class="skill-icon">
+						<svg class="icon icon-size" aria-hidden="true">
+							<use xlink:href="#icon-C4D"></use>
+						</svg>
+					</div>
+					<p>Cinema 4D</p>
+				</div>
+ -->
+
+
+
+
+
+
+
+
+
+			</div>
+
+
+			<div class="experience_box shadow-n">
+				<div class="title_b">
+					<h1 class="wow fadeInUp">工作经历</h1>
+					<!-- <p>work experience</p> -->
+				</div>
+				
+				
+<!-- 				<div class="experience shadow-s">
+					<h4><i class="iconfont icon-calendar"></i>2020.12.21 - 2002.04.08</h4>
+					<h2><i class="iconfont icon-calendar"></i>杭州未来科技有限公司</h2>
+
+				</div> -->
+
+				
+				<div class="experience shadow-s wow fadeInUp">
+					<h2>浙江易云物联科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> 2021.03 - 2022.01</span></h2>
+					<h3>高级UI设计师</h3>
+					<p>1.负责“来云社区”APP 2.0和3.0页面改版设计。参与相关竞品调研分析、制定页面视觉风格、交互动效Demo设计、统一制定项目设计规范和组件。<br/>
+					2. 负责“温州智安小区”浙里办小程序适老版UI调整。<br/>
+					3. 负责“磐安地质灾害精细化预警和风险管控平台”可视化大屏设计。</p>
+					<div class="tip">
+						<span class="shadow-n">动效设计</span>
+						<span class="shadow-n">可视化设计</span>
+						<span class="shadow-n">UI交互</span>						
+					</div>
+				</div>
+		
+				<div class="experience shadow-s wow fadeInUp">
+					<h2>杭州荣鼎科技有限公司<span>2019.04 - 2020.12</span></h2>
+					<h3>UI设计师</h3>
+					<p>1. 负责“海客会”APP 2.0改版和“职通通”APP界面面设计。参与制定页面视觉风格、统一制定项目设计规范和组件。<br/>
+2. 负责“喵晓法”APP、“喵晓法”官网、“青苒集团”官网设计。从0到1参与完成项目上线。<br/>
+3. 负责“赤子基金”官网PC端和移动端设计。</p>
+					<div class="tip">
+						<span class="shadow-n">UI设计</span>
+						<span class="shadow-n">动效设计</span>
+						<span class="shadow-n">网页设计</span>						
+					</div>
+				</div>				
+				<div class="experience shadow-s wow fadeInUp">
+					<h2>杭州海看网络科技有限公司<span>2016.10 - 2018.03</span></h2>
+					<h3>UI设计师</h3>
+					<p>1. 负责“脚途 · 地学之旅”APP界面设计，制定页面视觉风格。<br/>
+2. 负责“京杭运河( 杭州段)综合保护中心”、“浙江大学管理学院党建园地”、“杭州天目拍卖有限公司”、“杭州邦胜传媒有限公司”官网设计。并使用 Html+Css 编写官网静态页面。<br/>
+3. 负责“浙江师范大学接处警组件”PC客户端界面设计。</p>
+					<div class="tip">
+						<span class="shadow-n">App设计</span>
+						<span class="shadow-n">Html+Css</span>
+						<span class="shadow-n">网页设计</span>						
+					</div>
+				</div>				
+				
+				
+				
+				
+				
+
+			</div>
+
+
+			<div id="app"></div>
+
+			<div class="works_box">
+				<div class="title_b">
+					<h1 class="wow fadeInUp">App设计</h1>
+				</div>
+
+				
+				<div class="works">
+
+
+				
+				<div class="work wow fadeInUp">
+										<a href="details_ly.html"><img style="border: 1px #ffffff solid;" src="img/ly_cover.jpg" /></a>
+										<div class="work_text">
+											<h3>来云社区</h3>
+											<p>通过以“容量管理、技术应用、集成运营、服务赋能”等方面为方向，以“智慧通行、智慧安防、智慧人防、智能化、建筑物联网、社区服务”等为重点切入口，打造的未来社区综合服务平台。
+				</p>
+											<a href="details_ly.html" class="view blue">Learn More</a>
+										</div>
+									</div>
+
+
+					<div class="work wow fadeInUp">
+						<a href="details_hkh.html"><img src="img/hkh_cover.jpg" /></a>
+						<div class="work_text">
+							<h3>海纳云·海客会</h3>
+							<p>以先进的社区管理和服务理念为引领，
+利用先进的技术手段，打造资源数字化、应用网络化、流程规范化、服务智能化的社区管理和服务体系。建成“资源共
+享、协同服务、方便快捷、惠及全民”的智慧平安社区
+</p>
+							<a href="details_hkh.html" class="view blue">Learn More</a>
+						</div>
+					</div>
+
+					<div class="work wow fadeInUp">
+						<a href="details_ztt.html"><img src="img/ztt_cover.jpg" /></a>
+						<div class="work_text">
+							<h3>职通通</h3>
+							<p>职通通是由杭州荣鼎科技有限公司发布的一款以社交为基础，通过聊天的方式找工作的软件。应用的创立专注于为社会提供人力资源服务，秉承了让“招聘求职更简单”的原则，应用前沿大数据与人工智能技术，不断追求岗位与人才的多维度精准推荐与匹配，提升招聘效果。</p>
+							<a href="details_ztt.html" class="view blue">Learn More</a>
+						</div>
+					</div>
+
+<!-- 					<div class="work wow fadeInUp">
+						<a href="details_jt.html"><img src="img/jt_cover.jpg" /></a>
+						<div class="work_text">
+							<h3>脚途·地学之旅</h3>
+							<p>脚途·地学之旅是一个科普地学知识，发现新的地质资源，探索大自然奥秘的APP。
+做到用户足不出户便能学习地学知识！</p>
+							<a href="details_jt.html" class="view blue">Learn More</a>
+							
+						</div>
+					</div> -->
+					
+					
+					
+					
+
+				</div>
+
+
+			</div>
+
+
+
+<div id="web"></div>
+
+			<div class="works_box">
+				<div class="title_b">
+					<h1 class="wow fadeInUp">网页 / 可视化设计</h1>
+				</div>
+
+				<div class="works">
+
+					<div class="work wow fadeInUp">
+						<a href="details_pa.html"><img src="img/pa_cover.jpg" /></a>
+						<div class="work_text">
+							<h3>磐安县地灾预警和风险管控平台</h3>
+							<a href="details_pa.html" class="view blue">Learn More</a>
+						</div>
+					</div>
+
+
+					<div class="work wow fadeInUp">
+						<a href="http://www.purefunds.cn/#/"><img src="img/cz_cover.png" /></a>
+						<div class="work_text">
+							<h3>赤子基金官网</h3>
+							<a href="http://www.purefunds.cn/#/" class="view blue">Learn More</a>
+						</div>
+					</div>
+
+					<div class="work wow fadeInUp">
+						<a href="https://www.bonthink.com/index.html"><img src="img/bs_cover.jpg" /></a>
+						<div class="work_text">
+							<h3>杭州邦胜传媒有限公司官网</h3>
+							<!-- <p></p> -->
+							<a href="https://www.bonthink.com/index.html" class="view blue">Learn More</a>
+						</div>
+					</div>
+<!-- 
+					<div class="work wow fadeInUp">
+						<a href="http://www.dyhsjyc.cn/Front/Index.aspx"><img src="img/yh_cover.png" /></a>
+						<div class="work_text">
+							<h3>京杭运河保护中心</h3>
+							<a href="http://www.dyhsjyc.cn/Front/Index.aspx" class="view blue">Learn More</a>
+						</div>
+					</div> -->
+
+				</div>
+
+			</div>
+			
+			
+<div id="ae"></div>
+
+			<div class="works_box">
+				<div class="title_b">
+					<h1 class="wow fadeInUp">动效设计</h1>
+				</div>
+
+				<div class="gif_box">
+					<div class="gif_big shadow-s wow fadeInUp">
+							<img src="img/icon_3D.gif" />						
+					</div>
+					
+		<!-- 			<div class="gif shadow-s wow fadeInUp">
+							<img src="img/Tabbar-01-1.gif" />						
+					</div> -->
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/Tabbar-02.gif" />						
+					</div>
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/Tabbar-03.gif" />						
+					</div>
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/zhudabao.gif" />						
+					</div>
+					
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/lining.gif" />						
+					</div>
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/yinyue.gif" />						
+					</div>
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/xihu.gif" />						
+					</div>
+
+					
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/bike.gif" />						
+					</div>
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/walk.gif" />						
+					</div>
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/fj.gif" />						
+					</div>
+<!-- 					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/nz.jpg" />						
+					</div>
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/ysxy.gif" />						
+					</div>
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/tianqi01.gif" />						
+					</div>
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/tianqi02.gif" />						
+					</div>
+					<div class="gif shadow-s wow fadeInUp">
+							<img src="img/tianqi03.gif" />						
+					</div> -->
+
+					
+					
+					
+					
+					
+				
+				</div>
+
+			</div>
+
+<!-- <div id="csj"></div>
+			<div class="works_box">
+				<div class="title_b">
+					<h1 class="wow fadeInUp">电商设计</h1>
+				</div>
+			
+				<div class="ds_box shadow-s wow fadeInUp">
+					<a href="details_csj.html"><img src="img/csj_cover.png"/></a>
+					
+				
+				</div>
+			
+			</div> -->
+
+<!-- 
+<p class="beian">皖ICP备18025239号-1 www.showing.wang</p> -->
+
+
+	<a href="#" class="back_top shadow-s"><i class="iconfont icon-arrow-up icon-36"></i></a>
+	
+
+			<script>
+
+				$(window).scroll(function () {
+				if ($(this).scrollTop() > 800) {
+				$('.back_top').fadeIn(500);
+				} else {
+				$('.back_top').fadeOut(500);
+				}
+				});
+				
+			</script>
+
+
+		</div>
+	</body>
+</html>

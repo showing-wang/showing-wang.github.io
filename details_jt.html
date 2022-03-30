@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta http-equiv="Page-Enter" content="blendTrans(Duration=2.0)" />
+		<title>脚途·地学之旅</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_2355834_swsechdr4a.css" />
+		<script src="//at.alicdn.com/t/font_2355834_swsechdr4a.js"></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<link rel="stylesheet" href="css/animate.css" />
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+	</head>
+
+	<body>
+		<div class="header ">
+			<div class="pc_nav">
+				<a href="index.html#app">
+					<div class="logo"><i class="iconfont icon-arrow-left icon-40"></i></div>
+				</a>
+			</div>
+		</div>
+		<script>
+			window.addEventListener('scroll', function() {
+				let t = $('body, html').scrollTop();
+				if (t > 90) {
+					$('.header').addClass('pc_nav_shadow')
+				} else {
+					$('.header').removeClass('pc_nav_shadow')
+				}
+			})
+		</script>
+
+
+
+		<div class="details_title">
+			<img src="./img/jt_logo.png"/>
+			<h1>脚途·地学之旅</h1>
+			<p>脚途·地学之旅是一个科普地学知识，发现新的地质资源，探索大自然奥秘的APP。做到用户足不出户便能学习地学知识！</p>
+		</div>
+		<div class="details_box">
+			<img src="img/jt_01.jpg" />
+			<img src="img/jt_02.jpg" />
+			<img src="img/jt_03.jpg" />
+			<img src="img/jt_04.jpg" />
+			<img src="img/jt_05.jpg" />
+			<img src="img/jt_06.jpg" />
+		</div>
+
+
+		<a href="#" class="back_top shadow-s"><i class="iconfont icon-arrow-up icon-36"></i></a>
+		<script>
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 800) {
+					$('.back_top').fadeIn(500);
+				} else {
+					$('.back_top').fadeOut(500);
+				}
+			});
+		</script>
+
+	</body>
+</html>

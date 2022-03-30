@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta http-equiv="Page-Enter" content="blendTrans(Duration=2.0)" />
+		<title>海客会</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_2355834_swsechdr4a.css" />
+		<script src="//at.alicdn.com/t/font_2355834_swsechdr4a.js"></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<link rel="stylesheet" href="css/animate.css" />
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+	</head>
+
+	<body>
+		<div class="header ">
+			<div class="pc_nav">
+				<a href="index.html#app">
+					<div class="logo"><i class="iconfont icon-arrow-left icon-40"></i></div>
+				</a>
+			</div>
+		</div>
+		<script>
+			window.addEventListener('scroll', function() {
+				let t = $('body, html').scrollTop();
+				if (t > 90) {
+					$('.header').addClass('pc_nav_shadow')
+				} else {
+					$('.header').removeClass('pc_nav_shadow')
+				}
+			})
+		</script>
+
+
+
+		<div class="details_title">
+			<img src="./img/hkh_logo.png"/>
+			<h1>海纳云·海客会</h1>
+			<p>以先进的社区管理和服务理念为引领，
+利用先进的技术手段，打造资源数字化、应用网络化、流程规范化、服务智能化的社区管理和服务体系。建成“资源共
+享、协同服务、方便快捷、惠及全民”的智慧平安社区</p>
+		</div>
+		<div class="details_box">
+			<img src="img/hkh_01.jpg" />
+			<img src="img/hkh_02.jpg" />
+			<img src="img/hkh_03.jpg" />
+			<img src="img/hkh_live.gif"/>
+			<img src="img/hkh_04.jpg" />
+			<img src="img/hkh_05.jpg" />
+			<img src="img/hkh_06.jpg" />
+		</div>
+
+
+		<a href="#" class="back_top shadow-s"><i class="iconfont icon-arrow-up icon-36"></i></a>
+		<script>
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 800) {
+					$('.back_top').fadeIn(500);
+				} else {
+					$('.back_top').fadeOut(500);
+				}
+			});
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta http-equiv="Page-Enter" content="blendTrans(Duration=2.0)" />
+		<title>职通通</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_2355834_swsechdr4a.css" />
+		<script src="//at.alicdn.com/t/font_2355834_swsechdr4a.js"></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<link rel="stylesheet" href="css/animate.css" />
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+	</head>
+
+	<body>
+		<div class="header ">
+			<div class="pc_nav">
+				<a href="index.html#app">
+					<div class="logo"><i class="iconfont icon-arrow-left icon-40"></i></div>
+				</a>
+			</div>
+		</div>
+		<script>
+			window.addEventListener('scroll', function() {
+				let t = $('body, html').scrollTop();
+				if (t > 90) {
+					$('.header').addClass('pc_nav_shadow')
+				} else {
+					$('.header').removeClass('pc_nav_shadow')
+				}
+			})
+		</script>
+
+
+
+		<div class="details_title">
+			<img src="./img/ztt_logo.png"/>
+			<h1>职通通</h1>
+			<p>职通通是由杭州荣鼎科技有限公司发布的一款以社交为基础，通过聊天的方式找工作的软件。应用的创立专注于为社会提供人力资源服务，秉承了让“招聘求职更简单”的原则，应用前沿大数据与人工智能技术，不断追求岗位与人才的多维度精准推荐与匹配，提升招聘效果。</p>
+		</div>
+		<div class="details_box">
+			<img src="img/ztt_01.jpg" />
+			<img src="img/ztt_02.jpg" />
+			<img src="img/ztt_03.jpg" />
+			<img src="img/ztt_04.jpg" />
+			<img src="img/ztt_05.jpg" />
+		</div>
+
+
+		<a href="#" class="back_top shadow-s"><i class="iconfont icon-arrow-up icon-36"></i></a>
+		<script>
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 800) {
+					$('.back_top').fadeIn(500);
+				} else {
+					$('.back_top').fadeOut(500);
+				}
+			});
+		</script>
+
+	</body>
+</html>
